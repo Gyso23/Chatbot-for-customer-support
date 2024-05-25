@@ -1,0 +1,519 @@
+
+{
+  "intents": [
+  {
+    "tag": "greeting",
+    "queries": ["Hi", "Hey", "How are you", "Is anyone there?", "Hello", "Good day"],
+    "responses": ["Hey :-)", "Hello, thanks for visiting", "Hi there, what can I do for you?", "Hi there, how can I help?"]
+  },
+  {
+    "tag": "goodbye",
+    "queries": ["Bye", "See you later", "Goodbye", "Farewell", "Take care"],
+    "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon.", "Goodbye! Stay safe."]
+  },
+  {
+    "tag": "thanks",
+    "queries": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!", "I appreciate it"],
+    "responses": ["Happy to help!", "Any time!", "My pleasure", "You're welcome!", "Glad I could assist!"]
+  },
+  {
+    "tag": "items",
+    "queries": [
+      "Which items do you have?",
+      "What kinds of items are there?",
+      "What do you sell?",
+      "What products do you have?",
+      "What products do you offer?",
+      "Can you tell me about your range of products?",
+      "What kind of items do you sell?",
+      "Do you have a catalog or list of products?",
+      "What are your best-selling products?",
+      "Can you describe your product lineup?",
+      "What types of services do you provide?",
+      "What's in stock at your store?",
+      "Can you recommend some products you offer?",
+      "what do you offer?"
+    ],
+    "responses": [
+      "We offer coffee mugs in red, white, and blue colors. They're perfect for enjoying your favorite hot beverages!",
+      "We have a variety of coffee mugs available in red, white, and blue. They come in different sizes and designs to suit your preferences.",
+      "Our coffee mugs are available in classic colors like red, white, and blue. They're durable, stylish, and great for everyday use.",
+      "We sell high-quality coffee mugs in red, white, and blue colors. They're microwave and dishwasher safe for your convenience.",
+      "You'll love our selection of coffee mugs! We have them in vibrant red, crisp white, and patriotic blue colors.",
+      "Our coffee mugs come in a trio of colors: red, white, and blue. They make excellent gifts or additions to your own collection.",
+      "We offer coffee mugs in red, white, and blue shades. They're made from premium materials and designed for both style and functionality.",
+      "Whether you prefer red, white, or blue, we've got you covered with our range of coffee mugs. They're both stylish and practical for everyday use.",
+      "Our coffee mugs are available in three classic colors: red, white, and blue. They're perfect for enjoying a cup of coffee or tea any time of the day.",
+      "We have a great selection of coffee mugs in red, white, and blue. They're ideal for home or office use and make a wonderful addition to any kitchen."
+    ]
+  },
+  {
+    "tag": "payments",
+    "queries": [
+      "Do you take credit cards?",
+      "Do you accept Mastercard?",
+      "Can I pay with Paypal?",
+      "Are you cash only?",
+      "What payment methods do you accept?",
+      "How can I pay?",
+      "Accepted payment options?",
+      "Payment methods?",
+      "Can I use Apple Pay?",
+      "Do you accept online payments?",
+      "Do you support Visa payments?",
+      "Can I use American Express for payment?",
+      "Is Google Pay accepted?",
+      "Do you offer installment payments?",
+      "Are debit cards accepted?",
+      "Can I pay with a bank transfer?",
+      "Do you accept mobile payments?",
+      "Are there any additional fees for online payments?",
+      "Is PayPal the only online payment option?",
+      "Do you offer payment plans or financing options?"
+    ],
+    "responses": [
+      "We accept VISA, Mastercard, and Paypal",
+      "We accept most major credit cards, and Paypal",
+      "We accept major cards like Visa, Mastercard, and American Express",
+      "You can use major cards like Visa, Mastercard, and American Express for seamless transactions",
+      "Most credits cards, Visa and Mastercards are accepted",
+      "You may use Paypal or any major credit card, Visa and Mastercard for purchase",
+      "We accept major card brands like Visa, Mastercard, and American Express, allowing for easy and secure transactions.",
+      "Currently, we accept VISA, Mastercard, American Express, and Paypal. We also offer secure online payment options.",
+      "Yes, we accept Apple Pay, along with major credit cards and Paypal.",
+      "We accept online payments through our secure checkout process. You can use major credit cards, Paypal, and Apple Pay."
+    ]
+  },
+  {
+    "tag": "delivery",
+    "queries": [
+      "How long does delivery take?",
+      "How long does shipping take?",
+      "When do I get my delivery?",
+      "How can I track my order?",
+      "Shipping details?",
+      "Delivery time?",
+      "Tracking my package?",
+      "How long does it take",
+      "What is the estimated delivery time?",
+      "When will my package arrive?",
+      "Can I check the shipping status?",
+      "How can I monitor my shipment?",
+      "Do you provide tracking information?",
+      "When should I expect my order?",
+      "How can I find my order status?",
+      "Is express shipping available?",
+      "deliver",
+      "how fast can you deliver?"
+    ],
+    "responses": [
+      "Delivery takes 2-4 days",
+      "Shipping takes 2-4 days",
+      "Your order will arrive within 2-4 business days.",
+      "The estimated delivery time is 2-4 business days. You will receive a tracking number to monitor the progress of your order."
+    ]
+      },
+      {
+        "tag": "shippable_cities",
+        "queries": [
+          "Do you ship to Beijing?",
+          "Can you deliver to Shanghai?",
+          "Is shipping available in Guangzhou?",
+          "Can I receive my order in Shenzhen?",
+          "Do you offer delivery to Hangzhou?",
+          "shanghai",
+          "guangzhou",
+          "shenzhen"
+        ],
+        "responses": [
+          "Yes, we ship to your city",
+          "Certainly! We deliver to your city.",
+          "Shipping is available in your city.",
+          "You can receive your order in your city.",
+          "Yes, we offer delivery to your city."
+        ]
+      },
+      {
+        "tag": "non_shippable_cities",
+        "queries": [
+          "Can I get my order in Lhasa?",
+          "Do you ship to Urumqi?",
+          "Is delivery available in Lanzhou?",
+          "Can I receive my purchase in Kunming?",
+          "Do you offer shipping to Hohhot?"
+        ],
+        "responses": [
+          "I'm sorry, we currently do not ship to Lto your city.",
+          "Unfortunately, we do not deliver to your city.",
+          "Delivery is not available in your city.",
+          "We do not offer shipping to your city.",
+          "Sorry, we currently do not ship to your city."
+        ]
+      },
+      {
+        "tag": "funny",
+        "queries": ["Tell me a joke!", "Tell me something funny!", "Do you know a joke?", "Got any jokes?"],
+        "responses": ["Why did the hipster burn his mouth? He drank the coffee before it was cool.", "What did the buffalo say when his son left for college? Bison."]
+      },
+      {"tag": "update_address",
+      "queries": [
+      "I don't know how to update my delivery address",
+      " I do not know how to submit a different delivery address",
+      "how to edit the address?",
+      "where can I set the delivery address up?",
+      "I do not know how to submit a different delivery address",
+      "I need assistance with a shipping address update",
+      "I'm trying to set up another shipping address",
+      "want help updating the address",
+      "can you help me to set a shipping address up?",
+      " I need to submit the new delivery address",
+      "How can I change my shipping address?",
+      "I want to update my delivery details",
+      "Can I modify the address for my order?",
+      "Where can I change my delivery address?",
+      "I need to correct my shipping information",
+      "How do I edit my delivery address?",
+      "I want to set a new shipping address",
+      "Can you guide me through updating my address?",
+      "I need to alter the delivery address",
+      "How to update the shipping details?",
+      "how to update it?",
+      "update"
+       ],
+        "responses": [
+      "I can help you with that.",
+      "Sure, let me assist you with that",
+      "L can help you change it"
+
+    ]
+    },
+    {"tag": "sizes",
+    "queries": [
+      "What sizes are available?",
+      "Do you offer different sizes?",
+      "What size are the mugs?",
+      "Can I choose the size of the coffee mugs?",
+      "Are the mugs available in different sizes?",
+      "in what color"
+    ],
+    "responses": [
+      "Our coffee mugs come in standard sizes that are perfect for everyday use.",
+      "We offer coffee mugs in various sizes to suit your needs.",
+      "You can choose from our range of coffee mugs available in different sizes.",
+      "Our coffee mugs are available in standard sizes suitable for all preferences.",
+      "We provide coffee mugs in sizes that cater to both small and large preferences."
+    ]
+  },
+  {
+    "tag": "material",
+    "queries": [
+      "What are the mugs made of?",
+      "Are the mugs ceramic or porcelain?",
+      "What material are the coffee mugs?",
+      "Are the mugs dishwasher safe?",
+      "Can you tell me about the material of the mugs?",
+      "What kind of material are the mugs made from?",
+      "Are the mugs made of high-quality material?",
+      "What are the mugs constructed of?",
+      "Are the mugs microwave-safe?",
+      "Can you provide information about the mug material?",
+      "What is the composition of the coffee mugs?",
+      "Are the mugs eco-friendly?",
+      "Do the mugs contain any harmful substances?",
+      "What is the durability of the mug material?",
+      "Are the mugs lead-free?"
+    ],
+    "responses": [
+      "Our coffee mugs are made of high-quality ceramic material.",
+      "We offer coffee mugs crafted from durable and dishwasher-safe ceramic.",
+      "Our coffee mugs are made from premium ceramic material, ensuring longevity and durability.",
+      "The coffee mugs we sell are both microwave and dishwasher safe, made from quality ceramic.",
+      "Our coffee mugs are crafted from ceramic material, making them both stylish and durable."
+    ]
+  },
+  {
+    "tag": "care_instructions",
+    "queries": [
+      "How do I care for the mugs?",
+      "Are the mugs microwave safe?",
+      "Can I put the mugs in the dishwasher?",
+      "Do the mugs require special care?",
+      "Can you provide care instructions for the mugs?"
+    ],
+    "responses": [
+      "To ensure the longevity of your coffee mugs, we recommend hand washing them.",
+      "Our coffee mugs are microwave and dishwasher safe for your convenience.",
+      "We recommend hand washing the mugs to maintain their quality and appearance.",
+      "The mugs are both microwave and dishwasher safe, making them easy to care for.",
+      "For best results, we suggest hand washing the mugs to preserve their vibrant colors and design."
+    ]
+  },
+  {
+    "tag": "gifts",
+    "queries": [
+      "Are the mugs suitable as gifts?",
+      "Can I gift the coffee mugs?",
+      "Do you offer gift wrapping?",
+      "Are gift options available for the mugs?",
+      "Can the mugs be shipped as gifts?",
+      "Are the mugs gift-ready?",
+      "Can I purchase the mugs as presents?",
+      "Do you provide gift messages with the mugs?",
+      "Are there any gift sets available with the mugs?",
+      "Can I personalize the mugs for gifting?",
+      "Do you offer gift certificates for the mugs?",
+      "Are the mugs suitable for special occasions?",
+      "Can I include a gift note with the mugs?",
+      "Do you have any special packaging for gifting?",
+      "Are there any discounts or promotions for gifting mugs?"
+    ],
+    "responses": [
+      "Our coffee mugs make excellent gifts for any occasion, available in various colors to suit everyone's taste.",
+      "You can gift our stylish coffee mugs, available in red, white, and blue colors.",
+      "We offer gift wrapping options for our coffee mugs to make your gift extra special.",
+      "Our coffee mugs come in a beautiful packaging, making them perfect gifts for friends and family.",
+      "You can easily gift our coffee mugs, and we provide gift wrapping options to enhance the presentation."
+    ]
+  },
+  {
+    "tag": "user_preferences_personalization",
+    "queries": [
+      "Can I customize this?",
+      "Do you have this in my size/color?",
+      "Can I personalize my order?",
+      "Can I choose a different color?",
+      "Is customization available?",
+      "Do you offer personalization options?",
+      "Can I select a custom design?",
+      "Is there an option to customize the mug?",
+      "Can I choose my preferred design/color?",
+      "Do you have a customization service?",
+      "Can I personalize the mug with a name or message?",
+      "Is there a way to customize the product?",
+      "Do you offer color choices for the mugs?",
+      "Can I add a custom logo or image?",
+      "Is it possible to personalize the order details?",
+      "customize",
+      "personalize"
+    ],
+    "responses": [
+      "Certainly! You can customize your order as per your preferences.",
+      "Yes, we have a range of sizes and colors available.",
+      "Absolutely, you can personalize your order to suit your preferences.",
+      "Yes, you can choose from our available colors.",
+      "Yes, customization options are available for your order."
+    ]
+  },
+  {
+    "tag": "negation_reversal",
+    "queries": [
+      "I changed my mind.",
+      "Not interested anymore.",
+      "Cancel that.",
+      "I'll pass on that.",
+      "I've decided against it."
+    ],
+    "responses": [
+      "No problem! Let me know if you change your mind again.",
+      "Alright, let me know if you reconsider.",
+      "Sure, I've cancelled that for you.",
+      "Alright, let me know if you need anything else.",
+      "Okay, feel free to reach out if you change your mind."
+    ]
+  },
+  {
+    "tag": "order_status",
+    "queries": [
+    "Where is my order?", 
+    "What's the status of my order?",
+    "Has my order been shipped?", 
+    "When will my order arrive?", 
+    "Track my order",
+    "track order",
+    "i would like to track my order",
+    "what is its location?",
+    "can you check my order?"],
+    "responses": [
+      "Let me check that for you.", 
+      "I can help with that.", 
+      "Sure."]
+},
+{
+    "tag": "returns_refunds",
+    "queries": [
+      "Can I return my mug?", 
+      "What is your return policy?", 
+      "How do I get a refund?", 
+      "Can I exchange my mug?", 
+      "Return process",
+      "refund"],
+    "responses": [
+      "Our return policy allows returns within 30 days of purchase. Please visit our Returns & Refunds page for more details.", 
+      "You can request a refund or exchange within 30 days of purchase. Please visit our Returns & Refunds page for instructions."]
+},
+{
+    "tag": "promotions_discounts",
+    "queries": [
+      "Do you have any promotions?", 
+      "Are there any discounts available?", 
+      "Can I use a coupon code?", 
+      "Special offers", 
+      "Discounts on mugs",
+      "discounts"],
+    "responses": [
+      "Yes, we currently have a 10% discount on selected mugs. Use code MUG10 at checkout!", 
+      "Sign up for our newsletter to receive exclusive discounts and promotions."]
+},
+{
+    "tag": "product_availability",
+    "queries": [
+    "Is this mug in stock?", 
+    "When will this mug be available?", 
+    "Product availability", 
+    "Out of stock mugs", 
+    "Can I pre-order a mug?",
+    "stock"],
+    "responses": [
+    "The mug you're interested in is currently in stock and ready to ship!", 
+    "Unfortunately, that mug is currently out of stock. You can sign up to be notified when it's back in stock."]
+},
+{
+    "tag": "customer_service",
+    "queries": [
+      "How can I contact customer service?", 
+      "I need help from customer service", 
+      "Contact support", 
+      "Customer service hours", 
+      "Live chat support"],
+    "responses": [
+      "You can reach our customer service team at support@coffeemugs.com ", 
+      "Our customer service team is available from 9am to 6pm EST, Monday to Friday."]
+},
+{
+    "tag": "product_care",
+    "queries": [
+      "How do I care for my mug?", 
+      "Mug care instructions", 
+      "Can I put my mug in the dishwasher?", 
+      "Cleaning my mug", "Care tips for mugs"],
+    "responses": [
+      "To prolong the life of your mug, we recommend hand washing it with mild soap and avoiding abrasive cleaners.", 
+      "Our mugs are dishwasher safe, but hand washing is recommended for best results."]
+},
+{
+    "tag": "warranty_repairs",
+    "queries": [
+      "Is there a warranty on my mug?", 
+      "How do I get my mug repaired?", 
+      "Mug warranty information", 
+      "Broken mug", 
+      "Defective mug",
+      "warranty",
+      "do you have warranty"],
+      
+    "responses": [
+      "All our mugs come with a 1-year warranty against manufacturing defects. Please contact our customer service for repair or replacement options.", 
+      "We apologize for the inconvenience. Please contact our customer service team for assistance with your defective mug."]
+},
+{
+    "tag": "shipping_costs_time",
+    "queries": [
+      "How much does shipping cost?", 
+      "When will my mug arrive?", 
+      "Shipping time for mugs", 
+      "Express shipping options", 
+      "International shipping",
+      "what is the delivery fee?",
+      "shipping fee",
+      "delivery fee",
+      "shipping cost",
+      "cost",
+      "what is the cost of shipping?"],
+    "responses": [
+      "Standard shipping is $5, and it usually takes 2-4 business days for your mug to arrive."
+      ]
+},
+{
+    "tag": "bulk_orders",
+    "queries": [
+      "Can I order mugs in bulk?", 
+      "Wholesale purchasing", 
+      "Bulk discount on mugs", 
+      "Large orders of mugs", 
+      "Corporate gifts",
+      "bulk"],
+    "responses": [
+      "Yes, we offer bulk ordering and wholesale purchasing options. Please contact our sales team for more information and special pricing.", 
+      "Looking to place a large order for corporate gifts? We've got you covered! Contact our sales team for personalized assistance."]
+},
+{
+    "tag": "account_profile",
+    "queries": [
+      "How do I create an account?", 
+      "Login issues", 
+      "Update my profile", 
+      "Forgot password", 
+      "Account settings",
+      "account",
+      "profile",
+      "how do i sign up?",
+      "how do i make an account?",
+      "how do i make a profile"],
+    "responses": [
+      "You can easily create an account by clicking on the 'Sign Up' button at the top right corner of our website. For login issues or password resets, please visit the 'Account Settings' page.", 
+      "If you're having trouble logging in or need to reset your password, please visit our Account Settings page or contact customer service for assistance."]
+},
+{
+    "tag": "product_reviews_ratings",
+    "queries": [
+      "Can I see product reviews?", 
+      "Mug ratings", 
+      "Customer reviews", 
+      "Product recommendations", 
+      "Top-rated mugs",
+      "reviews"],
+    "responses": [
+      "You can find customer reviews and ratings on each product page. We also feature top-rated mugs in our Best Sellers section.", 
+      "Customer feedback is important to us! Check out our product pages for reviews, ratings, and recommendations."]
+},
+{
+    "tag": "loyalty_programs",
+    "queries": [
+      "Do you have a loyalty program?", 
+      "Earning rewards", 
+      "Membership benefits", 
+      "Loyalty points", 
+      "Joining the rewards program"],
+    "responses": [
+      "Yes, we have a loyalty program where you can earn points on every purchase. Sign up today to start earning rewards and enjoy exclusive member benefits!", 
+      "Our loyalty program rewards you with points on every purchase, which can be redeemed for discounts on future orders. Join today and start saving!"]
+},
+{
+    "tag": "privacy_security",
+    "queries": [
+      "What is your privacy policy?", 
+      "Is my data secure?", 
+      "Data protection", 
+      "Account security", 
+      "Privacy settings"],
+    "responses": [
+    "We take your privacy seriously. You can view our full privacy policy on our website to learn how we collect, use, and protect your personal information.", 
+    "Protecting your data is our top priority. We use industry-standard encryption and security measures to safeguard your information."
+  ]
+},
+{
+    "tag": "technical_support",
+    "queries": [
+      "I'm having trouble with the website", 
+      "Technical issues", 
+      "Website not working", 
+      "Troubleshooting", 
+      "Error messages"
+    ],
+    "responses": [
+      "We apologize for any inconvenience you're experiencing. Please try clearing your browser's cache and cookies or using a different browser. If the issue persists, please contact our technical department"]
+}
+  
+  
+]
+}
